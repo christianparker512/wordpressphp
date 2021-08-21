@@ -1,7 +1,5 @@
-echo "# wordpressphp" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/christianparker512/wordpressphp.git
-git push -u origin main
+<?php
+    $myName = "Chris"
+  ?>
+
+  <h1>Hi, my nmae is <?php echo $myName; ?></h1>
