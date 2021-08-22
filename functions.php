@@ -1,19 +1,65 @@
-<?php
+<footer class="site-footer">
+      <div class="site-footer__inner container container--narrow">
+        <div class="group">
+          <div class="site-footer__col-one">
+            <h1 class="school-logo-text school-logo-text--alt-color">
+              <a href="#"><strong>Fictional</strong> University</a>
+            </h1>
+            <p><a class="site-footer__link" href="#">555.555.5555</a></p>
+          </div>
 
-function carwash_files() {
-  
-  wp_enqueue_script('carwash-js', get_theme_file_uri('/build/index.js'), array('jquery'),'1.0', true);
-  wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
-  wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-  wp_enqueue_style('carwash_main_styles', get_theme_file_uri('/build/style-index.css'));
-  wp_enqueue_style('carwash_extra_styles', get_theme_file_uri('/build/index.css'));
-}
-function carwash_features(){
-  add_theme_support('title-tag');
+          <div class="site-footer__col-two-three-group">
+            <div class="site-footer__col-two">
+              <h3 class="headline headline--small">Explore</h3>
+              <nav class="nav-list">
+                <ul>
+                <li><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
+                <li><a href="<?php echo site_url('/locations') ?>">Locations</a></li>
+                <li><a href="<?php echo site_url('/detailing') ?>">Detailing</a></li>
+                <li><a href="<?php echo site_url('/contact-us') ?>">Contact us</a></li>
+                <li><a href="<?php echo site_url('/weather') ?>">Weather</a></li>
+                <li><a href="<?php echo site_url('/blog') ?>">Blog</a></li>
+                </ul>
+              </nav>
+            </div>
 
-}
+            <div class="site-footer__col-three">
+              <h3 class="headline headline--small">Learn</h3>
+              <nav class="nav-list">
+                <ul>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
 
-
-add_action('wp_enqueue_scripts','carwash_files');
-
-add_action('after_setup_theme', 'carwash_features');
+          <div class="site-footer__col-four">
+            <h3 class="headline headline--small">Connect With Us</h3>
+            <nav>
+              <ul class="min-list social-icons-list group">
+                <li>
+                  <a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+<?php wp_footer(); ?>
+</body>
+</html>
